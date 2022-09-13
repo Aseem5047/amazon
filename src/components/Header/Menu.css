@@ -1,0 +1,51 @@
+.active,
+.dot:hover {
+	background-color: transparent !important;
+}
+
+.eom-offcanvas .eom-hamburger-wrap {
+	top: 105px;
+	background-color: rgb(43 39 39);
+}
+
+.eom-offcanvas .eom-hamburger-wrap {
+	top: 60px !important;
+	right: -18px !important;
+	width: 50px !important;
+}
+
+.eom-offcanvas .eom-hamburger-wrap:hover,
+.eom-offcanvas .eom-hamburger-wrap:hover span {
+	border-color: #ffffff !important;
+	background-color: rgb(10, 10, 10) !important;
+}
+
+.eom-offcanvas .eom-hamburger-wrap span {
+	background-color: rgb(7, 7, 7) !important;
+	border-top: 2px solid white !important;
+}
+.eom-offcanvas .menu-overflow {
+	background: black;
+}
+
+.eom-offcanvas .eom-menu-wrap .eom-menu-item .sub-arrow {
+	width: 30px !important;
+}
+
+.eom-offcanvas .eom-menu-wrap .eom-menu-item:hover:after {
+	border-bottom: 3px solid #b7c7b7 !important;
+}
+
+.eom-offcanvas .eom-menu-wrap .eom-menu:not(.eom-submenu) {
+	padding-top: 1em !important;
+}
+
+.eom-offcanvas .eom-menu-wrap .eom-menu-item.active:after,
+.eom-offcanvas .eom-menu-wrap .eom-menu-item:hover {
+	opacity: 1;
+}
+
+.eom-offcanvas .eom-menu-wrap .eom-menu-item.active:after,
+.eom-offcanvas .eom-menu-wrap .eom-menu-item:hover:after {
+	border: none;
+}

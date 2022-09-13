@@ -1,0 +1,52 @@
+.carousel-image {
+	vertical-align: middle;
+    width: 30vw;
+    height: 80%;
+    mix-blend-mode: multiply;
+    margin-top: 4rem;
+}
+
+.thumbnail {
+	margin: 0 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+#thumbnail-div {
+	max-width: 40vw !important;
+	margin: 2vh auto;
+}
+
+.active-thumbnail {
+	border: #000000 solid 3px;
+}
+
+.dots {
+	bottom: -1vh;
+}
+
+.prev,
+.next {
+	border-radius: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+	.thumbnails {
+		margin: 15vh auto;
+	}
+	.carousel-image {
+		vertical-align: middle;
+		width: 100%;
+		height: 100%;
+		margin-top: 12vh;
+	}
+	.dots {
+		display: none !important;
+	}
+
+	#thumbnail-div {
+		max-width: 100% !important;
+		margin: 15vh auto;
+	}
+	
+}

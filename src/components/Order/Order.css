@@ -1,0 +1,26 @@
+.order {
+	padding: 40px;
+	border: 1px solid lightgray;
+	background-color: transparent;
+	position: relative;
+	width: 50vw;
+	margin: auto;
+	margin-bottom: 2rem;
+}
+
+.order-id {
+	position: absolute;
+	bottom: 15px;
+	right: 30px;
+}
+
+.order-total {
+	font-weight: 500;
+	text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+	.order {
+		width: 70vw;
+	}
+}

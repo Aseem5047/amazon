@@ -1,0 +1,17 @@
+* @mui/styled-engine-sc
+* @progress/kendo-react-dropdowns
+* @testing-library/jest-dom
+* @testing-library/user-event
+* bootstrap
+* jquery
+* popper
+* react-accessible-dropdown-menu-hook
+* react-bootstrap-dropdown-menu
+* react-burger-menu
+* react-current-location-address
+* react-dropdown
+* react-geocode
+* react-geolocated
+* react-google-autocomplete
+* react-google-maps
+* react-leaflet

@@ -1,0 +1,240 @@
+.scroller {
+	max-width: 75rem;
+	padding: 10px;
+	display: grid;
+	grid-auto-flow: column;
+	grid-column-gap: 1rem;
+	column-gap: 2vw;
+	margin: 2rem auto;
+	height: 25vh;
+}
+
+.ScrollMenu {
+	padding: 10px;
+	display: flex;
+	grid-column-gap: 10vw;
+	overflow-x: hidden;
+	margin: 2rem;
+	height: 50vh;
+	align-items: center;
+	margin: auto;
+	text-align: center;
+	align-content: center;
+	max-width: 90rem;
+	justify-content: center;
+}
+
+.productScroll {
+	height: 45vh !important;
+	max-width: 80rem;
+}
+
+.scroll {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+	margin-top: 20px;
+	width: 100%;
+	margin-top: 10vh;
+}
+
+.scroller-item {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	display: flex;
+}
+
+.productItem {
+	width: unset;
+}
+
+.scroller-item img {
+	width: 100%;
+	height: 10rem;
+	cursor: pointer;
+	mix-blend-mode: multiply;
+}
+
+#productScrollImg {
+	height: 30vh;
+	mix-blend-mode: multiply;
+}
+
+#productScrollImg:hover {
+	transform: scale(1.1, 1.1);
+}
+
+.scroller-item img:hover {
+	transform: scale(1.1, 1.1);
+}
+
+.scroller-item::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: calc(100% + 15px);
+	height: calc(100% + 15px);
+	border-radius: inherit;
+	z-index: -1;
+}
+
+.productTitle {
+	margin: 1rem auto;
+	color: black;
+	font-size: 1rem;
+	font-weight: 600;
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+	width: 150px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.productTitle:hover {
+	white-space: normal;
+	overflow: visible;
+	width: 100%;
+}
+
+/* Horizontal Scroll */
+
+.right-arrow,
+.left-arrow {
+	cursor: pointer;
+	background: transparent;
+	outline: none;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* color: #ff2625; */
+	font-size: 25px;
+	border-radius: 4px;
+	transform: scale(1, 1);
+	transition: 0.3s all ease-in-out;
+}
+
+.right-arrow {
+	right: 0vw;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+	transform: scale(1.1, 1.1);
+	background: black;
+	border: 2px solid black;
+	color: white;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.react-horizontal-scrolling-menu--wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	align-items: center;
+	margin-top: 1rem;
+	width: 90vw;
+}
+
+.react-horizontal-scrolling-menu--scroll-container {
+	display: flex;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	position: relative;
+	width: 75% !important;
+	margin: auto;
+	cursor: pointer !important;
+	/* justify-content: center; */
+}
+
+.react-horizontal-scrolling-menu--scroll-container:hover {
+	overflow-x: visible !important;
+}
+
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+	height: 0.3rem;
+	background: transparent;
+	margin-top: 5vh;
+}
+
+@media only screen and (max-width: 700px) {
+	.scroller {
+		padding: 10px;
+		display: grid;
+		grid-auto-flow: column;
+		column-gap: 2rem;
+		overflow-x: scroll;
+		margin: -3rem auto;
+		margin-top: 1rem;
+	}
+
+	.productScroll {
+		height: 20vh !important;
+		max-width: 90vw;
+	}
+
+	.scroller-item img {
+		width: 30vw;
+		height: 15vh;
+		cursor: pointer;
+	}
+
+	#productScrollImg {
+		width: 10rem;
+		height: 10rem;
+		cursor: pointer;
+	}
+
+	.ScrollMenu {
+		height: 25vh;
+	}
+
+	.right-arrow,
+	.left-arrow {
+		display: none !important;
+	}
+	.react-horizontal-scrolling-menu--scroll-container {
+		width: 100% !important;
+	}
+	.react-horizontal-scrolling-menu--scroll-container {
+		height: unset !important;
+		overflow-x: auto !important;
+	}
+
+	.css-v4wli0-MuiGrid-root > .MuiGrid-item {
+		padding-left: 0px !important;
+	}
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 500px) {
+	.scroller {
+		max-width: 75vw;
+		padding: 10px;
+		display: grid;
+		grid-auto-flow: column;
+		grid-column-gap: 1rem;
+		grid-column-gap: 1rem;
+		grid-column-gap: 5rem;
+		column-gap: 5rem;
+		overflow-x: auto;
+		margin: 2rem auto;
+		max-height: 20vh;
+	}
+
+	.scroller-item img {
+		width: 10rem;
+		height: 10rem;
+		cursor: pointer;
+	}
+
+	#productScrollImg {
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,48 @@
+.home {
+	max-width: 1500px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	display: flex;
+}
+
+.item-container {
+	display: flex;
+	color: white;
+	background-color: #2b2727;
+}
+
+.item-container p {
+	margin: 10px;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	z-index:1;
+}
+
+.item-container a {
+	color:white;
+	text-decoration: none;
+	z-index:1;
+}
+
+
+.item-container a:hover{
+	text-decoration:line-through;
+	color:#f36100;
+}
+
+.home-row {
+	display: flex;
+	z-index: 1;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+._VrCvP{
+	margin:20px;
+}
+
+
+

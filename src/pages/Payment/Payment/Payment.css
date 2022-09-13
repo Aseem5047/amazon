@@ -1,0 +1,120 @@
+.payment {
+	background-color: #fff;
+}
+
+.payment-container > h1 {
+	text-align: center;
+	padding: 10px;
+	font-weight: 400;
+	background-color: rgb(234, 237, 237);
+	border-bottom: 1px solid lightgray;
+}
+
+.payment-container > h1 a {
+	text-decoration: none;
+	color: #f36100;
+}
+
+.payment-container > h1 a:hover {
+	border-bottom: 2px solid black;
+}
+
+.payment-price-container {
+	margin-top: 10px;
+}
+
+.payment-section {
+	display: flex;
+	padding: 20px;
+	margin: 0 20px;
+	border-bottom: 1px solid lightgray;
+	justify-content: center;
+	max-width: 70vw;
+	margin: auto;
+}
+
+.payment-title {
+	flex: 0.2;
+}
+
+.payment-address,
+.payment-items,
+.payment-details {
+	flex: 0.8;
+}
+
+.payment-details > form {
+	max-width: 400px;
+}
+
+.payment-details > h3 {
+	padding-bottom: 20px;
+}
+
+.payment-details > form > div > button {
+	background: #f0c14b;
+	border-radius: 2px;
+	width: 50vw;
+	height: 30px;
+	border: 1px solid;
+	font-weight: bolder;
+	margin-top: 10px;
+	border-color: #a88734 #9c7e31 #846a29;
+	color: #111;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+	.payment-section {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: unset !important;
+		max-width: 100%;
+	}
+
+	.payment-details > form {
+		padding: 3vh;
+	}
+
+	.payment-address,
+	.payment-items,
+	.payment-details {
+		padding: 2vh;
+	}
+
+	#ShippingAddressGrid {
+		margin-top: -10vh;
+	}
+}
+
+.css-mhc70k-MuiGrid-root {
+	margin-top: 3vh !important;
+}
+
+#AddressGrid {
+	width: 50vw;
+	margin: auto;
+}
+
+.emptyBasket {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.emptyBasketBtn {
+	font-size: 20px;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	outline: none;
+	color: black;
+	background: #fcba03;
+	font-weight: 500;
+	width: fit-content;
+	text-align: center;
+	margin: auto;
+	margin-top: 2vh;
+}

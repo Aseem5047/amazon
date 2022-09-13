@@ -1,0 +1,229 @@
+.SliderMain {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: auto;
+}
+
+.activeItem {
+	opacity: 1;
+	transform: translateX(0);
+	width: 70vw;
+	background-position: left center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.lastItem {
+	transform: translateX(-100%);
+	max-width: fit-content !important;
+	display: none;
+}
+.nextItem {
+	transform: translateX(100%);
+	max-width: fit-content !important;
+	display: none;
+}
+
+.SliderItemsContent {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin: auto;
+	margin-left: 50%;
+	text-align: left;
+	width: 50%;
+}
+
+.SliderItemsTitle {
+	font-size: 1rem;
+	padding: 0.5rem;
+	width: fit-content;
+	border-radius: 10px;
+}
+
+.SliderItemsSub {
+	font-size: 28px;
+}
+
+.SliderItemsDesc {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 300;
+}
+
+.SliderLeft,
+.SliderRight {
+	position: absolute;
+	top: 7.5rem;
+	margin: 1vw;
+	color: white;
+	max-width: 2rem;
+	height: 1.5rem;
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+	padding: 0.75rem;
+	background-color: rgba(128, 128, 128, 0.479);
+	border-radius: 50%;
+}
+
+.SliderLeft {
+	left: 0;
+}
+.SliderRight {
+	right: 0;
+}
+
+.items-list {
+	display: flex;
+	list-style: none;
+	position: relative;
+	width: 85%;
+	height: 20rem;
+	padding: 0;
+	margin-top: 1rem;
+}
+
+.SliderLeft:hover,
+.SliderRight:hover {
+	color: white;
+	background: black;
+}
+
+.primeFeaturesList {
+	display: flex;
+	gap: 0.4rem;
+	justify-content: flex-end;
+	width: 100%;
+	max-width: 75rem;
+	float: right;
+	margin: -2.5rem 4.5rem 2.5rem auto;
+	cursor: pointer;
+}
+.feature {
+	width: 100%;
+	max-width: 10rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+}
+
+.currentFeature {
+	width: 100%;
+	max-width: 10rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	transform: scale(1.2, 1.2);
+	position: relative;
+	z-index: 1;
+	box-shadow: 0 0 15px 0px #000;
+	clip-path: inset(0px -15px 0px -15px);
+}
+
+.mainContainer {
+	background-size: 1200px auto, 100% 100%;
+	background-position: 0px 0px, 0px 0px;
+	background-repeat: no-repeat, repeat;
+	max-width: 100%;
+	height: 210px;
+	bottom: 0;
+	cursor: pointer;
+}
+
+.mainContainer:hover {
+	animation: shake 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	25% {
+		transform: translate(-1px, -2px) rotate(-15deg);
+	}
+	50% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	75% {
+		transform: translate(3px, 2px) rotate(15deg);
+	}
+	100% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+}
+
+.featureTitle {
+	color: white;
+	/* z-index: 5; */
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	padding: 1.5rem;
+}
+
+@media only screen and (max-width: 1250px) {
+	.primeFeaturesList {
+		max-width: 95vw;
+		float: unset;
+		margin: -1rem auto 3.5rem auto;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.activeItem {
+		opacity: 1;
+		transform: translateX(0);
+		width: 85%;
+		background-position: left center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.items-list {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.SliderItemsSub {
+		font-size: 22px;
+	}
+	.SliderItemsDesc {
+		font-size: 15px;
+	}
+	.Entertainment_content {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.activeItem {
+		background-image: none !important;
+		width: 100%;
+	}
+	.SliderItemsContent {
+		display: flex;
+		flex-direction: column;
+		grid-gap: 1rem;
+		gap: 1rem;
+		margin: auto;
+		text-align: center;
+		width: 75%;
+		align-items: center;
+	}
+	.SliderLeft,
+	.SliderRight {
+		background: transparent;
+		color: black;
+		padding: 0.5rem;
+	}
+}

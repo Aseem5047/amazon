@@ -1,0 +1,19 @@
+.checkout-left {
+	width: 50%;
+	margin: auto;
+	height: max-content;
+}
+
+.checkout-title {
+	margin-right: 10px;
+	padding: 10px;
+	/* border-bottom: 1px solid lightgray; */
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+	.checkout-left {
+		width: 85%;
+	}
+}
