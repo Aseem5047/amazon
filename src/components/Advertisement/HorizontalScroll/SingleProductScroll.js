@@ -7,7 +7,7 @@ import CurrentProduct from '../../../pages/SingleProduct/CurrentProduct';
 
 const SingleProductScroll = () => {
 
-    let { type } = useParams();
+    let { type, id } = useParams();
     const [productData, setProductData] = useState([])
 
     useEffect(() => {
@@ -29,10 +29,9 @@ const SingleProductScroll = () => {
     return (
         <div className="single-product-container">
 
-            {productData?.map((product, id) => (
+            {productData?.map((product) => (
                 (product.id === id) &&
                 <CurrentProduct SingleProduct={product} key={id} />
-
             ))}
 
             <div className="maylike-products-wrapper">

@@ -238,3 +238,14 @@
 		cursor: pointer;
 	}
 }
+
+@media only screen and (min-width: 1500px) {
+	.right-arrow {
+		right: 85vw !important;
+		position: absolute !important;
+	}
+	.left-arrow {
+		left: 85vw !important;
+		position: absolute !important;
+	}
+}

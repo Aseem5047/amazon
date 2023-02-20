@@ -15,7 +15,7 @@ import "./Header.css"
 const Dropdown = () => {
     const [active, setActive] = useState(false)
     const options = [
-        "Home", "New Releases", "Electronics", "Prime", "Mobile", "Computer", "Fashion", "Trending", "Sports & Fitness"
+        "Home", "New Releases", "Electronics", "Prime", "Mobiles", "Computers", "Fashion", "Trending", "Sports & Fitness"
     ]
 
     const icons = [<TiSortAlphabeticallyOutline />, <BiNews />, <AiFillThunderbolt />, <SiPrime />, <BiMobileVibration />, <RiComputerLine />, <GiRolledCloth />, <FiTrendingUp />, <MdSportsBasketball />]

@@ -4,6 +4,18 @@
 	gap: 4.5rem;
 }
 
+.checkout-product-info {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	align-items: start;
+	border: 0px;
+	padding: 0vh;
+	/* margin-bottom: 10vh; */
+	margin-top: -2rem;
+	max-width: 30rem !important;
+	width: 100%;
+}
 .Payment-checkout-product {
 	gap: 2rem;
 }
@@ -76,17 +88,6 @@ i {
 		white-space: normal;
 		overflow: visible;
 		width: 100%;
-	}
-
-	.checkout-product-info {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		align-items: center;
-		border: 0px;
-		padding: 0vh;
-		/* margin-bottom: 10vh; */
-		margin-top: -2rem;
 	}
 
 	.order-id {

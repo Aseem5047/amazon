@@ -39,7 +39,6 @@ const Success = () => {
 
   const handleClick = () => {
     try {
-
       db.collection("users")
         .doc(user && user.uid)
         .collection("orders")
@@ -60,7 +59,7 @@ const Success = () => {
       // history.replace("/checkout");
     }
   }
-
+  console.log(clientSecret);
   return (
     <div className="success-wrapper">
       <div className="success">

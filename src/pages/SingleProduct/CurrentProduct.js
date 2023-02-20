@@ -44,11 +44,11 @@ const CurrentProduct = ({ SingleProduct }) => {
 
 
                     <div className="single-product-info">
-                        <div className="single-product-title">{SingleProduct.title}</div>
-                        <div className="single-product-rating">{Array(SingleProduct.rating).fill().map((_, index) => <p key={index}>⭐</p>)}</div>
+                        <div className="single-product-title" style={{ textAlign: 'left', margin: 'unset' }}>{SingleProduct.title}</div>
                         <p className="single-product-price">Price ... <strong>₹</strong>
                             <strong>{SingleProduct.price}</strong>
                         </p>
+                        <div className="single-product-rating">{Array(SingleProduct.rating).fill().map((_, index) => <p key={index}>⭐</p>)}</div>
                         <div className="single-product-specification">
                             <h4>Specification</h4>
                             {SingleProduct.specification && SingleProduct.specification.map((item, index) => (
@@ -66,8 +66,8 @@ const CurrentProduct = ({ SingleProduct }) => {
                             <i><ShoppingCartOutlinedIcon /></i>
                             Add To Basket
                         </button>
-                        <div style={{display: "flex", justifyContent: "flex-start"}}> 
-                            <h2 style={{ marginTop: "2vh", fontSize: "1.1rem" }}>Scroll Down to View Suggested Products </h2> 
+                        <div style={{ display: "flex", justifyContent: "flex-start" }}>
+                            <h2 style={{ marginTop: "2vh", fontSize: "1.1rem" }}>Scroll Down to View Suggested Products </h2>
                         </div>
                     </div>
 

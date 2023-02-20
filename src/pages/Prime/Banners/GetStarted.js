@@ -9,7 +9,7 @@ const GetStarted = () => {
             <div className="GetStartedHiddenContainer" />
             <div className="GetStartedContainer">
                 <div className="Banner_Content GetStarted">
-                    <div className="text_content">
+                    <div className="text_content" style={{ justifyContent: 'center', alignItems: 'center' }}>
                         <span style={{ fontSize: "2rem" }}>Choose your plan to get started</span>
                         <div className="button_content" >
                             <span>JOIN PRIME AT ₹179 PER MONTH</span>

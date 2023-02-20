@@ -5,14 +5,20 @@ import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined'
 import { removeFromBasket } from '../../redux/actions'
 import { useAlert } from "react-alert";
 
-const CheckoutProduct = ({ id, title, image, rating, price, details }) => {
+// number formatter.
+var formatter = new Intl.NumberFormat('en-IN', {
+    style: 'currency',
+    currency: 'INR',
+});
+
+const CheckoutProduct = ({ id, title, image, rating, price, details, quantity }) => {
 
     const alert = useAlert();
     let dispatch = useDispatch();
 
     const removeItemFromBasket = () => {
-        alert.success(`Item removed`)
         dispatch(removeFromBasket(id))
+        alert.success(`Item removed`)
     }
 
     return (
@@ -23,9 +29,9 @@ const CheckoutProduct = ({ id, title, image, rating, price, details }) => {
                 <div className="checkout-product-rating">
                     {Array(rating).fill().map((_, index) => (<p key={index}>⭐</p>))}
                 </div>
+                <p style={{ fontSize: "16px", fontWeight: "bold" }}>Quantity x {quantity}</p>
                 <p className="checkout-product-price">
-                    <strong>₹</strong>
-                    <strong>{price}</strong>
+                    <strong>{formatter.format(price)}</strong>
                 </p>
                 <div className="productDetails">
                     <p>{details}</p>

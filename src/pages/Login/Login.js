@@ -54,6 +54,8 @@ const Login = () => {
         }
     };
 
+    console.log(user);
+
     return (
         // <div className="login" style={{backgroundImage:`url(${backgroundLogo}`}}>
         <div className="login">

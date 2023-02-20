@@ -5,6 +5,7 @@ import CurrencyFormat from 'react-currency-format';
 import OrderedProduct from '../OrderedProduct/OrderedProduct';
 
 const Order = ({ order }) => {
+    console.log(order);
     return (
         <div className="order">
 

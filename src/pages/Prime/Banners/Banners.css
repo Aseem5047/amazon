@@ -87,6 +87,8 @@
 
 .GetStarted {
 	margin-left: 40%;
+	justify-content: center;
+	text-align: center;
 }
 
 @media only screen and (max-width: 850px) {

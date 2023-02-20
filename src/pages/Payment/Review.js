@@ -4,9 +4,10 @@ import Box from '@mui/material/Box';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import { useSelector } from 'react-redux';
 import PaymentCheckout from '../../components/CheckoutProduct/PaymentCheckout';
-
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import { useState } from 'react';
+import { useMemo } from 'react';
 
 const LeftArrow = () => {
   const { scrollPrev } = React.useContext(VisibilityContext);
@@ -30,24 +31,36 @@ const RightArrow = () => {
 
 
 export default function Review() {
-
+  const [groupedItemsInBasket, setGroupedItemsInBasket] = useState([])
   const { basket } = useSelector(state => state.data);
+
+  useMemo(() => {
+    const groupedItems = basket.reduce((results, item) => {
+      (results[item.id] = results[item.id] || []).push(item);
+      // console.log(results);
+      return results;
+    }, {});
+    setGroupedItemsInBasket(groupedItems)
+  }, [basket])
 
   return (
     <React.Fragment>
       <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow} className="PaymentProductScroll">
 
-        {basket && basket.map((item) => (
-          <Box key={item.id}
-            itemId={item.id}
-            title={item.title}
+        {basket && Object.entries(groupedItemsInBasket).map(([key, items]) => (
+          <Box key={items[0].id}
+            itemId={items[0].id}
+            title={items[0].title}
             m="0 40px" disablePadding spacing={2}>
             <PaymentCheckout
-              id={item.id}
-              title={item.title}
-              image={item.image}
-              price={item.price}
-              rating={item.rating}
+              key={key}
+              id={items[0].id}
+              title={items[0].title}
+              image={items[0].image}
+              price={items[0].price}
+              rating={items[0].rating}
+              details={items[0].detail}
+              quantity={items.length}
             />
           </Box>
         ))}

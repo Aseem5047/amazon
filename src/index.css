@@ -30,7 +30,7 @@ code {
 }
 
 .btn {
-	background-color: #f0c14b;
+	background-color: #fcba03;
 	border: 1px solid;
 	width: 150px;
 	cursor: pointer;
@@ -40,6 +40,8 @@ code {
 	width: 60%;
 	margin-left: 20%;
 	margin-right: 20%;
+	border-radius: 7px;
+	font-weight: bold;
 }
 
 .btn:hover {
@@ -79,13 +81,22 @@ code {
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: darkgrey;
-	outline: 1px solid slategrey;
+	background-color: #fcba03;
+	outline: none;
 	cursor: pointer !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
 	cursor: pointer !important;
+}
+
+.item-container::-webkit-scrollbar {
+	background-color: transparent;
+	display: none;
+}
+
+.css-b7k0tb-MuiAutocomplete-listbox::-webkit-scrollbar {
+	display: none;
 }
 
 .css-16awh2u-MuiAutocomplete-root .MuiOutlinedInput-root {

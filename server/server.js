@@ -27,6 +27,8 @@ app.post("/paymentIntent/create", async (request, response) => {
     response.status(201).send({
         clientSecret: paymentIntent,
     });
+    console.log(paymentIntent);
+
 });
 
 app.post('/create-checkout-session', async (req, res) => {

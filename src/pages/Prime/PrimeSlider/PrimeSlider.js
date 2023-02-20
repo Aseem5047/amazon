@@ -102,6 +102,7 @@ const PrimeSlider = () => {
                                     {/* <div className="SliderItemsBackground" style={{
                                     
                                 }} /> */}
+
                                     < div className="SliderItemsContent" >
                                         <span className="SliderItemsTitle"
                                             style={

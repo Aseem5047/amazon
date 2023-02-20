@@ -5,7 +5,7 @@ import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined'
 import { removeFromBasket } from '../../redux/actions'
 import { useAlert } from "react-alert";
 
-const PaymentCheckout = ({ id, title, image, rating, price }) => {
+const PaymentCheckout = ({ id, title, image, rating, price, quantity }) => {
 
     const alert = useAlert();
     let dispatch = useDispatch();
@@ -20,6 +20,7 @@ const PaymentCheckout = ({ id, title, image, rating, price }) => {
             <img src={image} alt="" className="checkout-product-image" />
             <div className="checkout-product-info">
                 <p className="checkout-product-title">{title}</p>
+                <p style={{ fontSize: "16px", fontWeight: "bold" }}>Quantity x {quantity}</p>
                 <p className="checkout-product-price">
                     <strong>₹</strong>
                     <strong>{price}</strong>

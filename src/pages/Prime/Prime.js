@@ -37,6 +37,7 @@ const Prime = () => {
             </div>
 
             <PrimeSlider />
+
             <div style={{ maxWidth: "90vw", margin: "auto", marginTop: "5vh" }}>
                 <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/prrrefresh/June/2022/PMP_Page_1500x300_px.jpg" alt="" style={{ width: "100%" }} />
             </div>

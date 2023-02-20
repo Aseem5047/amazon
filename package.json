@@ -21,6 +21,7 @@
 		"framer-motion": "^7.0.0",
 		"gsap": "^3.10.4",
 		"moment": "^2.29.1",
+		"postcss": "^8.4.16",
 		"react": "^17.0.2",
 		"react-alert": "^7.0.3",
 		"react-alert-template-basic": "^1.0.2",
@@ -41,7 +42,7 @@
 		"redux-persist": "^6.0.0",
 		"redux-thunk": "^2.3.0",
 		"stripe": "^10.3.0",
-		"swiper": "^6.8.4"
+		"swiper": "^8.4.2"
 	},
 	"scripts": {
 		"start": "react-scripts start",

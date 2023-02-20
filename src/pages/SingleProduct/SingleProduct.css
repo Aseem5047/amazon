@@ -2,6 +2,10 @@
 	padding: 20px;
 	background-color: white;
 	height: max-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 5rem;
 }
 
 .single-product-ad {
@@ -24,9 +28,14 @@
 	mix-blend-mode: multiply;
 }
 
-.single-product-image:hover,
-.single-product-title:hover {
+.single-product-image:hover {
 	transform: scale(1.1, 1.1);
+}
+
+.single-product-title:hover:hover {
+	white-space: normal;
+	overflow: visible;
+	width: 100%;
 }
 
 .single-product-info {
@@ -36,12 +45,20 @@
 }
 
 .single-product-title {
-	font-size: 20px;
+	margin: 1rem auto;
+	color: black;
+	font-size: 18px;
 	font-weight: 600;
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+	width: 150px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .single-product-rating {
-	margin-top: 10px;
+	margin: 10px 0px;
 	display: flex;
 }
 
@@ -144,6 +161,7 @@ i {
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	align-items: center;
 }
 
 .maylike-products-wrapper h2 {

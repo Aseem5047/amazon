@@ -62,6 +62,10 @@ option:hover {
 	list-style: line-through;
 }
 
+/* #header-search-label {
+	color: white;
+} */
+
 .navbar-menu svg {
 	cursor: pointer;
 }
