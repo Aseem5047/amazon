@@ -39,11 +39,15 @@ export default function ItemCard() {
 
       </div>
 
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonDevices/Neel/July/meetalexapage/music/Casting-MLP-Graphic_Section_2.jpg" alt="" style={{ width: "100vw", marginTop: "7vh" }} />
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
 
+
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonDevices/Neel/July/meetalexapage/music/Casting-MLP-Graphic_Section_2.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+
+      </div>
       <div style={{ marginBottom: "0px" }}>
 
-      <ItemSet type={"Alexa"} set={3}/>
+        <ItemSet type={"Alexa"} set={3} />
 
       </div>
 
@@ -64,15 +68,20 @@ export default function ItemCard() {
         ))}
 
       </div>
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonDevices/Neel/rook/MA/daisydut_2018-04-13T06-00_8b3996_AlexaCom_rook.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+      </div>
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Jupiter21/T2/Bank-Stripe/FST/FST_1500x100_English.jpg" alt="" style={{ width: "100%" }} />
+      </div>
 
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonDevices/Neel/rook/MA/daisydut_2018-04-13T06-00_8b3996_AlexaCom_rook.jpg" alt="" style={{ width: "100vw", marginTop: "7vh" }} />
-
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Jupiter21/T2/Bank-Stripe/FST/FST_1500x100_English.jpg" alt="" style={{ width: "100vw" }} />
-
-      <ItemSet type={"Alexa"} set={1}/>
-
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Audio/bankOffer/1/HSBC_EMI-fest_stripe_1500x120.jpg" alt="" style={{ width: "100vw", marginTop: "7vh" }} />
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Audio/bankOffer/1/LP_Stripe_PC.jpg" alt="" style={{ width: "100vw" }} />
+      <ItemSet type={"Alexa"} set={1} />
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Audio/bankOffer/1/HSBC_EMI-fest_stripe_1500x120.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+      </div>
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Audio/bankOffer/1/LP_Stripe_PC.jpg" alt="" style={{ width: "100%" }} />
+      </div>
 
     </>
 

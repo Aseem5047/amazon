@@ -9,9 +9,11 @@ const MobileComputer = () => {
     return (
         <div className="home">
             <div className="home-contaner">
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/WLA/Jupiter/Phase4/MobilesPage/P53006629_Jup21_Phase3_WLA_Mobiles-page_PC_1500_gold.jpg" alt="" style={{ width: "100vw", marginTop: "37px" }} />
+                <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/WLA/Jupiter/Phase4/MobilesPage/P53006629_Jup21_Phase3_WLA_Mobiles-page_PC_1500_gold.jpg" alt="" style={{ width: "100%", marginTop: "37px" }} />
+                </div>
 
-                <ItemSet type={"Mobile"} set={1}/>
+                <ItemSet type={"Mobile"} set={1} />
 
                 <ItemCard />
 

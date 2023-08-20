@@ -8,7 +8,7 @@ import ItemSet from '../../../utils/ItemsSet/ItemSet';
 
 export default function ItemCard() {
 
-  
+
   const [productData, setProductData] = useState([])
 
   useEffect(() => {
@@ -41,14 +41,15 @@ export default function ItemCard() {
         ))}
 
       </div>
-
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Jupiter2021/UpgradeDays/PC_Billboard_DrawingTablet_1500_Lite.jpg" alt="" style={{ width: "100vw", marginTop: "7vh" }} />
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Jupiter2021/UpgradeDays/PC_Billboard_DrawingTablet_1500_Lite.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+      </div>
 
       <div style={{ marginBottom: "0px" }}>
 
       </div>
 
-      <ItemSet type={"Computer"} set={2}/>
+      <ItemSet type={"Computer"} set={2} />
 
       <div className="products-container">
 
@@ -67,8 +68,9 @@ export default function ItemCard() {
         ))}
 
       </div>
-
-      <img src="https://m.media-amazon.com/images/G/31/img19/AmazonDevices/jupiter/2000x200.jpg" alt="" style={{ width: "100vw", marginTop: "7vh" }} />
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+        <img src="https://m.media-amazon.com/images/G/31/img19/AmazonDevices/jupiter/2000x200.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+      </div>
 
     </>
 

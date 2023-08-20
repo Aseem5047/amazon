@@ -21,7 +21,7 @@ const Payment = () => {
             <h2 style={{ textAlign: "center", margin: "auto", marginTop: "1vh", width: "90vw" }}>
                 Edit or Pay on Checkout
             </h2>
-            <div className="payment" style={{ width: "100vw", marginTop: "5vh" }}>
+            <div className="payment" style={{ width: "100%", marginTop: "5vh" }}>
 
                 <h2 style={{ margin: "auto", textAlign: "center" }}>Review Proudcts</h2>
                 <div className="payment-container">

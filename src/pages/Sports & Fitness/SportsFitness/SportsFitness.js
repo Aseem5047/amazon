@@ -8,11 +8,13 @@ const SportsFitness = () => {
     return (
         <div className="home">
             <div className="home-contaner">
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Sports/1500x300_HPSP.jpg" alt="" style={{ width: "100vw", marginTop: "37px" }} />
+                <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Sports/1500x300_HPSP.jpg" alt="" style={{ width: "100%", marginTop: "37px" }} />
+                </div>
 
-                <ItemSet type={"Sports"} set={2}/>
+                <ItemSet type={"Sports"} set={2} />
 
-                <ItemCard/>
+                <ItemCard />
                 <BackToTop />
             </div>
         </div>

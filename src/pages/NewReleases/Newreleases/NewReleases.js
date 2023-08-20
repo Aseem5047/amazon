@@ -8,11 +8,13 @@ const BestSellers = () => {
     return (
         <div className="home">
             <div className="home-contaner">
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Cameras/Jupiter/TilesPhase4/elec/D28069901_IN_CEPC_Electronics_teaser-graphics_Jupiter-P1_Aug21_1500_h10d.jpg" alt="" style={{ width: "100vw", marginTop: "4vh", marginBottom: "4vh" }} />
+                <div style={{ margin: "auto", display: "flex", justifyContent: "center", borderRadius: "20px" }}>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Cameras/Jupiter/TilesPhase4/elec/D28069901_IN_CEPC_Electronics_teaser-graphics_Jupiter-P1_Aug21_1500_h10d.jpg" alt="" style={{ width: "100%", marginTop: "4vh", marginBottom: "4vh" }} />
+                </div>
 
-                <ItemSet type={"NewReleases"} set={1}/>
+                <ItemSet type={"NewReleases"} set={1} />
 
-                <ItemCard/>
+                <ItemCard />
 
                 <BackToTop />
             </div>

@@ -38,11 +38,15 @@ export default function ItemCard() {
 
       </div>
 
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Smallappliances/Jupiter-21/Slot_16_Curated-store_Banner_PC.gif" alt="" style={{ width: "100vw", marginTop: "40px" }} />
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+
+
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Smallappliances/Jupiter-21/Slot_16_Curated-store_Banner_PC.gif" alt="" style={{ width: "100%", marginTop: "40px" }} />
+      </div>
 
 
       <div style={{ marginBottom: "0px" }}>
-      <ItemSet type={"Trending"} set={1}/>
+        <ItemSet type={"Trending"} set={1} />
       </div>
 
       <div className="products-container">
@@ -63,7 +67,11 @@ export default function ItemCard() {
 
       </div>
 
-      <img src="https://m.media-amazon.com/images/G/31/img19/AmazonDevices/jupiter/2000x200.jpg" alt="" style={{ width: "100vw", marginTop: "7vh" }} />
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+
+
+        <img src="https://m.media-amazon.com/images/G/31/img19/AmazonDevices/jupiter/2000x200.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+      </div>
 
     </>
 

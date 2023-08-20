@@ -40,12 +40,15 @@ export default function ItemCard() {
         ))}
 
       </div>
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/PCA/Jup21/P4_PC-banner_GROOMING.jpg" alt="" style={{ width: "100vw", marginTop: "7vh" }} />
-
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Laptops/Jupiter21/Phase4/D29756085_IN_OP_Jup21-graphics_P2_1500x200.jpg" alt="" style={{ width: "100vw" }} />
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/PCA/Jup21/P4_PC-banner_GROOMING.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+      </div>
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Laptops/Jupiter21/Phase4/D29756085_IN_OP_Jup21-graphics_P2_1500x200.jpg" alt="" style={{ width: "100%" }} />
+      </div>
       <div style={{ marginBottom: "0px" }}>
 
-      <ItemSet type={"Electronics"} set={2}/>
+        <ItemSet type={"Electronics"} set={2} />
 
       </div>
 
@@ -66,8 +69,9 @@ export default function ItemCard() {
         ))}
 
       </div>
-
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Cameras/Jupiter/TilesPhase4/1500x300_learn_photography.jpg" alt="" style={{ width: "100vw" , marginTop: "7vh"}} />
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Cameras/Jupiter/TilesPhase4/1500x300_learn_photography.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+      </div>
 
 
     </>

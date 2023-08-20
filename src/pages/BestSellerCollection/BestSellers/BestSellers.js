@@ -9,13 +9,16 @@ const BestSellers = () => {
     return (
         <div className="home">
             <div className="home-contaner">
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/Events/Jupiter21/Phase3/HPB/CEPC-pc.png" alt="" style={{ width: "100vw", marginTop: "30px" }} />
+                <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
 
-                <ItemSet type={"Trending"} set={2}/>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/Events/Jupiter21/Phase3/HPB/CEPC-pc.png" alt="" style={{ width: "100%", marginTop: "30px" }} />
+                </div>
 
-                <ItemCard/>
+                <ItemSet type={"Trending"} set={2} />
 
-                <BackToTop/>
+                <ItemCard />
+
+                <BackToTop />
 
             </div>
         </div>

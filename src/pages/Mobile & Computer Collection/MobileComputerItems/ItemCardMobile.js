@@ -40,16 +40,20 @@ export default function ItemCard() {
         ))}
 
       </div>
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/AdvantagePrime/Quiz/Jupiter/Event/Phase4/D28903577_Jupiter_P1_WLD_Advantage-Justfor-Prime_PC_Ingress_header_1500x300.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+      </div>
 
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/AdvantagePrime/Quiz/Jupiter/Event/Phase4/D28903577_Jupiter_P1_WLD_Advantage-Justfor-Prime_PC_Ingress_header_1500x300.jpg" alt="" style={{ width: "100vw", marginTop: "7vh"}} />
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
 
-      <img src="https://m.media-amazon.com/images/G/31/img19/AmazonDevices/jupiter/2000x200.jpg" alt="" style={{ width: "100vw" }} />
+        <img src="https://m.media-amazon.com/images/G/31/img19/AmazonDevices/jupiter/2000x200.jpg" alt="" style={{ width: "100%" }} />
+      </div>
 
       <div style={{ marginBottom: "0px" }}>
 
       </div>
 
-      <ItemSet type={"Mobile"} set={2}/>
+      <ItemSet type={"Mobile"} set={2} />
 
       <div className="products-container">
 

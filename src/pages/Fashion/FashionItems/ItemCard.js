@@ -41,11 +41,14 @@ export default function ItemCard() {
 
       </div>
 
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Manjula/Phase4_Slices/Main-bank_PC_Header2_ends_tomorrow_New.jpg" alt="" style={{ width: "100vw", marginTop: "7vh",marginBottom: "0vh" }} />
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Manjula/Phase4_Slices/Main-bank_PC_Header2_ends_tomorrow_New.jpg" alt="" style={{ width: "100%", marginTop: "7vh", marginBottom: "0vh" }} />
+      </div>
 
       <div style={{ marginBottom: "0px" }}>
 
-      <ItemSet type={"Fashion"} set={1}/>
+        <ItemSet type={"Fashion"} set={1} />
 
       </div>
 
@@ -66,8 +69,9 @@ export default function ItemCard() {
         ))}
 
       </div>
-
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Jupiter21/T2/Bank-Stripe/FST/FST_1500x100_English.jpg" alt="" style={{ width: "100vw", marginTop: "7vh" }} />
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Jupiter21/T2/Bank-Stripe/FST/FST_1500x100_English.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+      </div>
 
     </>
 

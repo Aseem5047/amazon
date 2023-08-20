@@ -41,14 +41,17 @@ export default function ItemCard() {
         ))}
 
       </div>
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG19/Home/bau/Decor/XCM_Manual_1500x300_1202741_1202741_IN_Home_Decor_Non_GW_BAU_1575984235_jpg._CB427170763_.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+      </div>
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
 
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG19/Home/bau/Decor/XCM_Manual_1500x300_1202741_1202741_IN_Home_Decor_Non_GW_BAU_1575984235_jpg._CB427170763_.jpg" alt="" style={{ width: "100vw", marginTop: "7vh" }} />
-
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Smallappliances/COOP_20/Bajaj/Kitchen_AppliancesOct.jpg" alt="" style={{ width: "100vw", marginTop: "40px" }} />
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Smallappliances/COOP_20/Bajaj/Kitchen_AppliancesOct.jpg" alt="" style={{ width: "100%", marginTop: "40px" }} />
+      </div>
 
       <div style={{ marginBottom: "0px" }}>
 
-      <ItemSet type={"Kitchen"} set={2}/>
+        <ItemSet type={"Kitchen"} set={2} />
       </div>
 
       <div className="products-container">
@@ -68,12 +71,15 @@ export default function ItemCard() {
         ))}
 
       </div>
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Lawnandgarden/June/Liveplants/Banners/1500x300.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+      </div>
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
 
-        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Lawnandgarden/June/Liveplants/Banners/1500x300.jpg" alt="" style={{ width: "100vw", marginTop: "7vh" }} />
-                
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Jupiter21/T2/Bank-Stripe/FST/FST_1500x100_English.jpg" alt="" style={{ width: "100vw"}} />
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Jupiter21/T2/Bank-Stripe/FST/FST_1500x100_English.jpg" alt="" style={{ width: "100%" }} />
+      </div>
 
-      
+
     </>
 
   );

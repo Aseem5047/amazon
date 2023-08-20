@@ -18,7 +18,7 @@ const HeaderItems = () => {
                 {<p id="prime"><span>{<Link to="/sports&fitness">Sports & Fitness</Link>}</span></p>}
                 {<p id="kitchen"><span>{<Link to="/home&kitchen">Home & Kitchen</Link>}</span></p>}
                 {<p ><span>{<Link id="prime" to="/prime">Movie & Music</Link>}</span></p>}
-                {<a className="pay" href="/pay" style={{ margin: "5px", fontfamily: "Arial, sans-serif" }} rel="noreferrer">Amazon Pay</a>}
+                {/* {<a className="pay" href="/pay" style={{ margin: "5px", fontfamily: "Arial, sans-serif" }} rel="noreferrer">Amazon Pay</a>} */}
 
             </div>
         </div>

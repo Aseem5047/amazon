@@ -8,7 +8,7 @@ import ItemSet from '../../../utils/ItemsSet/ItemSet';
 
 export default function ItemCard() {
 
-  
+
   const [productData, setProductData] = useState([])
 
   useEffect(() => {
@@ -43,14 +43,20 @@ export default function ItemCard() {
 
       </div>
 
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonBusiness/AB_EventMLP/ACQ__Electronics__Set1_1500_300_2210.jpg" alt="" style={{ width: "100vw", marginTop: "7vh" }} />
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
 
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Accessories/Phase-3/1500X300_6.jpg" alt="" style={{ width: "100vw" }} />
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonBusiness/AB_EventMLP/ACQ__Electronics__Set1_1500_300_2210.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+      </div>
+
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Accessories/Phase-3/1500X300_6.jpg" alt="" style={{ width: "100%" }} />
+      </div>
 
 
       <div style={{ marginBottom: "0px" }}>
 
-      <ItemSet type={"NewReleases"} set={2}/>
+        <ItemSet type={"NewReleases"} set={2} />
 
       </div>
 
@@ -71,7 +77,10 @@ export default function ItemCard() {
         ))}
 
       </div>
-      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Cameras/Jupiter/TilesPhase4/1500x300_learn_photography.jpg" alt="" style={{ width: "100vw", marginTop: "7vh" }} />
+
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Cameras/Jupiter/TilesPhase4/1500x300_learn_photography.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+      </div>
 
 
     </>

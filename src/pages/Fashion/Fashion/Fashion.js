@@ -8,9 +8,11 @@ const Fashion = () => {
     return (
         <div className="home">
             <div className="home-contaner">
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Fashion/Event/Jupiter_21/Wave4/AF/MainHeaders/EndsTomorrow/FINAL-PC-EVENT-TOP-BANNER_E1_Eng_Tomorrow.jpg" alt="" style={{ width: "100vw", marginTop: "4vh", marginBottom: "4vh" }} />
+                <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Fashion/Event/Jupiter_21/Wave4/AF/MainHeaders/EndsTomorrow/FINAL-PC-EVENT-TOP-BANNER_E1_Eng_Tomorrow.jpg" alt="" style={{ width: "100%", marginTop: "4vh", marginBottom: "4vh" }} />
+                </div>
 
-                <ItemSet type={"Fashion"} set={2}/>
+                <ItemSet type={"Fashion"} set={2} />
 
                 <ItemCard />
                 <BackToTop />
