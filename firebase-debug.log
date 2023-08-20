@@ -92,3 +92,39 @@
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
+[debug] [2023-04-04T12:58:41.703Z] ----------------------------------------------------------------------
+[debug] [2023-04-04T12:58:41.705Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aseem\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-04-04T12:58:41.705Z] CLI Version:   11.7.0
+[debug] [2023-04-04T12:58:41.705Z] Platform:      win32
+[debug] [2023-04-04T12:58:41.706Z] Node Version:  v16.17.0
+[debug] [2023-04-04T12:58:41.707Z] Time:          Tue Apr 04 2023 18:28:41 GMT+0530 (India Standard Time)
+[debug] [2023-04-04T12:58:41.707Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-04T12:58:41.710Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-04-04T12:58:41.788Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-04T12:58:41.788Z] > authorizing via signed-in user (aseemgupta2002@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-04-04T12:58:41.815Z] [hub] writing locator at C:\Users\aseem\AppData\Local\Temp\hub-app-4fd7d.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, eventarc {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, eventarc\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2023-04-04T12:58:41.870Z] defaultcredentials: writing to file C:\Users\aseem\AppData\Roaming\firebase\aseemgupta2002_gmail_com_application_default_credentials.json
+[debug] [2023-04-04T12:58:41.873Z] Setting GAC to C:\Users\aseem\AppData\Roaming\firebase\aseemgupta2002_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\aseem\\AppData\\Roaming\\firebase\\aseemgupta2002_gmail_com_application_default_credentials.json"}}
+[debug] [2023-04-04T12:58:41.874Z] > refreshing access token with scopes: []
+[debug] [2023-04-04T12:58:41.875Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-04-04T12:58:41.876Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-04T12:58:42.075Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-04-04T12:58:42.075Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-04T12:58:42.075Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/app-4fd7d/adminSdkConfig [none]
+[debug] [2023-04-04T12:58:42.368Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/app-4fd7d/adminSdkConfig 401
+[debug] [2023-04-04T12:58:42.369Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/app-4fd7d/adminSdkConfig {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-04-04T12:58:42.369Z] Failed to get Admin SDK config for app-4fd7d, falling back to cacheFailed to get Admin SDK for Firebase project app-4fd7d. Please make sure the project exists and your account has permission to access it. {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Admin SDK for Firebase project app-4fd7d. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}},"response":{"statusCode":401}},"exit":1,"message":"HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":401},"status":500}
+[debug] [2023-04-04T12:58:42.398Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-04-04T12:58:42.398Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-04-04T12:58:42.398Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\aseem\\.cache\\firebase\\emulators\\ui-v1.9.0\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\aseem\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.9.0\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-04-04T12:58:42.437Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-04-04T12:58:42.438Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-04-04T12:58:42.542Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\aseem\Desktop\Web\react\amazon\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\aseem\\Desktop\\Web\\react\\amazon\\functions\" for Cloud Functions..."}}
+[debug] [2023-04-04T12:58:42.673Z] Validating nodejs source

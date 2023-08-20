@@ -66,8 +66,10 @@ export default function ItemCard() {
         ))}
 
       </div>
+      <div style={{ margin: "auto", display: "flex", justifyContent: "center" }}>
 
-      <img src="./images/ad3.jpg" alt="" style={{ width: "100vw", marginTop: "7vh" }} />
+        <img src="./images/ad3.jpg" alt="" style={{ width: "100%", marginTop: "7vh" }} />
+      </div>
 
     </>
 

@@ -49,7 +49,7 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"both": "concurrently \"npm run start\" \"firebase emulators:start\""
+		"both": "concurrently \"npm run start\" \"cd ./server && nodemon sever.js\""
 	},
 	"eslintConfig": {
 		"extends": [
