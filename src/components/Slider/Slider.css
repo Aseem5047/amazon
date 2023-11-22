@@ -75,7 +75,8 @@ article.nextSlide {
 
 @media only screen and (max-width: 500px) {
 	.banner-img {
-		height: 17rem !important;
+		height: 20rem !important;
+		object-fit: fit;
 		mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 	}
 }
