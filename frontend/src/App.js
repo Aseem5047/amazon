@@ -15,6 +15,7 @@ import GetLocation from './components/GetLocation/GetLocation';
 import NotFound from './NotFound/NotFound';
 import Success from './pages/Success/Success';
 import SingleProductScroll from './components/Advertisement/HorizontalScroll/SingleProductScroll';
+import axios from 'axios';
 
 const Home = lazy(() => import("./pages/Home/Home"))
 const Login = lazy(() => import("./pages/Login/Login"))
@@ -53,6 +54,10 @@ function App() {
     })
 
   }, [dispatch])
+
+  axios.defaults.baseURL = "https://amazonxxx.vercel.app/";
+  // axios.defaults.baseURL = "http://localhost:5001";
+  axios.defaults.withCredentials = true;
 
   return (
     <BrowserRouter>

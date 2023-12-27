@@ -20,6 +20,8 @@ export default function ItemCard() {
     });
   }, []);
 
+  // console.log(productData);
+
 
   return (
     <>

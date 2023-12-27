@@ -199,6 +199,10 @@ option:hover {
 	border-radius: 24px;
 }
 
+#Search:hover {
+	opacity: 75%;
+}
+
 .search > select {
 	height: 41px;
 	padding: 5px;

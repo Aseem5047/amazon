@@ -31,6 +31,8 @@ const CurrentProduct = ({ SingleProduct }) => {
         image
     ))
 
+    console.log(SingleProduct);
+
     return (
         <div className="single-product-container">
 
