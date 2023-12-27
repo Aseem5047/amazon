@@ -17,7 +17,6 @@ import Four from '../../components/Advertisement/Four/Four';
 import ProductScroll from '../../components/Advertisement/HorizontalScroll/ProductScroll';
 import { ScrollSet1 } from '../../utils/Advertisement/HorizontalScroll'
 import ItemSet from '../../utils/ItemsSet/ItemSet';
-import 'react-card-with-image/dist/index.css'
 
 const Home = () => {
     const bannerImages = [Banner25, Banner15, Banner14, Banner16, Banner17, Banner18, Banner19, Banner20, Banner21, Banner22, Banner23, Banner24, Banner26, Banner27, Banner28, Banner29, Banner30, Banner31, Banner32, Banner33, Banner34, Banner35, Banner36, Banner37, Banner38, Banner39, Banner40]

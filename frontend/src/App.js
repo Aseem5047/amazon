@@ -55,7 +55,7 @@ function App() {
 
   }, [dispatch])
 
-  axios.defaults.baseURL = "https://amazonxxx.vercel.app/";
+  axios.defaults.baseURL = "https://amazonback.vercel.app/";
   // axios.defaults.baseURL = "http://localhost:5001";
   axios.defaults.withCredentials = true;
 

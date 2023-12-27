@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { CardView } from 'react-card-with-image';
 import { db } from '../Firebase'
-// import ItemSetView from './ItemSetView';
-// import 'react-card-with-image/dist/index.css'
+
+import 'react-card-with-image/dist/index.css'
 
 
 const ItemSet = ({ type, set }) => {

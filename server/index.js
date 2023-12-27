@@ -67,10 +67,10 @@ app.post('/create-checkout-session', async (req, res) => {
                 }
             }),
 
-            // success_url: `http://localhost:3000/success` || 'https://amazonxxx.vercel.app/success',
-            // cancel_url: `http://localhost:3000/` || 'https://amazonxxx.vercel.app/' ,
-            success_url: 'https://amazonxxx.vercel.app/success',
-            cancel_url: 'https://amazonxxx.vercel.app/',
+            // success_url: `http://localhost:3000/success` ,
+            // cancel_url: `http://localhost:3000/`' ,
+            success_url: 'https://amazonxxx.netlify.app/success',
+            cancel_url: 'https://amazonxxx.netlify.app/',
         }
 
         // Create Checkout Sessions from body params.
