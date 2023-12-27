@@ -25,7 +25,7 @@ const Orders = () => {
 
     return (
         <>
-            <img className="checkout-ad" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/WLA/Jupiter/Phase4/MobilesPage/P53006629_Jup21_Phase3_WLA_Mobiles-page_PC_1500_green_2.jpg" alt="Ad" style={{ width: "100vw", marginTop: "4vh" }} />
+            <img className="checkout-ad" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/WLA/Jupiter/Phase4/MobilesPage/P53006629_Jup21_Phase3_WLA_Mobiles-page_PC_1500_green_2.jpg" alt="Ad" style={{ width: "100%", marginTop: "4vh" }} />
 
             <div className="orders">
                 <h1>Your Orders</h1>

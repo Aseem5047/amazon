@@ -141,7 +141,7 @@ const Header = () => {
                 <Tooltip title={`${user ? "User Sign Out" : "User Log In"}`} onClick={handleAuth} className="user_image_div">
                     {user?.photoURL ? <img src={user.photoURL} alt="" className="user_image" /> : <img src="/defaultProfile.png" alt="" className="user_image" />}
                 </Tooltip>
-                <Link to={`${user ? "/account" : "/"}`} className="header-link">
+                <Link to={`${user ? "/account" : "/login"}`} className="header-link">
                     <div className="header-option userInfo">
                         <div className="userInfo_Account">
                             <span className="header-option1">Hello, {user ? user?.displayName?.toUpperCase() || user.email : "Guest"}</span>
