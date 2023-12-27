@@ -21,7 +21,7 @@ const Checkout = () => {
 
         const stripe = await getStripe();
 
-        const response = await fetch('/create-checkout-session', {
+        const response = await fetch('https://amazonback.vercel.app/create-checkout-session', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

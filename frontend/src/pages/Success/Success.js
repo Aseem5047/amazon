@@ -30,7 +30,7 @@ const Success = () => {
     const getClientSecret = async () => {
       const response = await axios({
         method: "POST",
-        url: `/paymentIntent/create?total=${getBasketTotal(basket) * 100}`,
+        url: `https://amazonback.vercel.app/paymentIntent/create?total=${getBasketTotal(basket) * 100}`,
       })
       setClientSecret(response.data.clientSecret);
     }
