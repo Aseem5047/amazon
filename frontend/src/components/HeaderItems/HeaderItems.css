@@ -2,9 +2,9 @@
 	display: flex;
 	color: white;
 	background-color: #2b2727;
-	position: fixed;
-	top: 59;
-	width: 100vw;
+	position: sticky;
+	top: 3.75rem;
+	width: 100%;
 	z-index: 2;
 	/* overflow-x: scroll; */
 	/* justify-content: center; */

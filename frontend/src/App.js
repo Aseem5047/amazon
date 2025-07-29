@@ -61,7 +61,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div >
+      <div>
         <Switch>
           <Suspense fallback={<Loading />}>
             <Route exact path='/orders'>

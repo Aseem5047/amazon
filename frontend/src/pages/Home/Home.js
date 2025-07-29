@@ -23,8 +23,8 @@ const Home = () => {
 
     return (
         <div>
-            <div className="home" style={{ width: "100vw" }}>
-                <div className="home-container" style={{ width: "100vw" }}>
+            <div className="home">
+                <div className="home-container" >
 
                     <div className="slider">
                         <Slider images={bannerImages} />

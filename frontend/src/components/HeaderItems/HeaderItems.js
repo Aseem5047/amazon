@@ -5,7 +5,7 @@ import "./HeaderItems.css"
 
 const HeaderItems = () => {
     return (
-        <div>
+        <>
             <div className="item-container">
                 {<p ><span style={{ color: "#2b2727" }}>------------</span></p>}
                 {<p ><span>{<Link to="/trending">Best Sellers</Link>}</span></p>}
@@ -21,7 +21,7 @@ const HeaderItems = () => {
                 {/* {<a className="pay" href="/pay" style={{ margin: "5px", fontfamily: "Arial, sans-serif" }} rel="noreferrer">Amazon Pay</a>} */}
 
             </div>
-        </div>
+        </>
     )
 }
 
